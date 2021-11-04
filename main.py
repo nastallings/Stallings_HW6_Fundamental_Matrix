@@ -34,6 +34,7 @@ if __name__ == "__main__":
     img1 = cv2.imread('Model_House_Images/house.000.pgm')
     img2 = cv2.imread('Model_House_Images/house.001.pgm')
     fig, ax1, ax2, F = Compute_F(img1, img2)
+    print("Fundamental Matrix:")
     print(F)
     ax1.imshow(cv2.cvtColor(img1, cv2.COLOR_BGR2RGB))
     ax2.imshow(cv2.cvtColor(img1, cv2.COLOR_BGR2RGB))
